@@ -12,6 +12,7 @@
     </div>
     <div class="grid-Child2">
         <p> Menu </p>
+        <input type="button" value="Thêm sản phẩm" id="addProduct" onclick="showAddProductInput()">
     </div>
     <div class="grid-Child3">
         <div class="advertise">
@@ -22,39 +23,8 @@
         <div class="switchContent" id="switchContent">
             <p> Content here </p>
             <div id="inputValue">
-            <input type="text" id="nameProduct" placeholder="Product name">
-            <input type="number" id="quantityProduct" placeholder="Product quantity" value="1">
-            <input type="text" id="qualityProduct" placeholder="Product quality (5star)" value="Unknow">
-            <input type="number" id="priceProduct" placeholder="1000$">
-            <input type="text" id="description" placeholder="Discribe your product">
-            <select id="typeProduct">
-                <option value="Weapon">Weapon</option>
-                <option value="Armor">Armor</option>
-            </select>
 
-                <p> for gun </p>
-            <input type="text" class="weapon" id="firePower" placeholder="Medium">
-            <input type="text" class="weapon" id="fireRate" placeholder="50/s">
-            <input type="text" class="weapon" id="range" placeholder="500m">
-            <input type="text" class="weapon" id="clipSize" placeholder="30">
-            <select class="weapon" id="typeWeapon">
-                <option value="Hand Gun">Hand Gun</option>
-                <option value="SMG">SMG</option>
-                <option value="Machine Gun">Machine Gun</option>
-                <option value="Heavy Gun">Heavy Gun</option>
-                <option value="Melee">Melee</option>
-            </select>
-
-                <p> for armor </p>
-            <input type="number" class="armor" id="endurance" placeholder="100 hit">
-            <select class="armor" id="typeArmor">
-                <option value="Heavy">Heavy</option>
-                <option value="Medium">Medium</option>
-                <option value="Light">Light</option>
-            </select>
             </div>
-
-            <input type="button" value="Confirm" onclick="addProduct()">
         </div>
     </div>
     <div class="grid-Child5">
