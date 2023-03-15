@@ -1,7 +1,14 @@
 class Armor {
-    constructor() {
+    constructor(endurance,atype) {
         this.armorEndurance = endurance;
         this.armorType = atype;
+    }
+    setAllThisArmor(endurance,atype){
+        this.armorEndurance = endurance;
+        this.armorType = atype;
+    }
+    getAllThisArmor(){
+        return this ;
     }
     setArmorEndurance(endurance){
         this.armorEndurance = endurance;

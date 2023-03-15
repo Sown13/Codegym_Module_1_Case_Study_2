@@ -1,14 +1,23 @@
 class Product {
-    constructor() {
-        this.productName = value;
-        this.productQuantity = value;
-        this.productQuality = value;
+    constructor(name,quantity,quality,describe,price) {
+        this.productName = name;
+        this.productQuantity = quantity;
+        this.productQuality = quality;
         this.weapon = new Weapon();
         this.armor = new Armor();
-        this.discription = value;
-        this.price = value;
+        this.description = describe;
+        this.price = price;
     }
-
+    setAllThisProduct(name,quantity,quality,describe,price){
+        this.productName = name;
+        this.productQuantity = quantity;
+        this.productQuality = quality;
+        this.description = describe;
+        this.price = price;
+    }
+    getAllThisProduct(){
+      return this;
+    }
     getProductName() {
         return this.productName;
     }
