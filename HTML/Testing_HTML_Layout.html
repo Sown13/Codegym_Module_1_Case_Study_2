@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="text-align: center;width: 95%">
+    <tr>
+        <th> Mục</th>
+        <th> Trước khi sửa</th>
+        <th> Sau khi sửa</th>
+    </tr>
+    <tr>
+        <td>Tên sản phẩm:</td>
+        <td>
+            ${productList[index].getProductName()}
+        </td>
+        <td><input type="text" id="nameProduct" placeholder="Product name"></td>
+    <tr>
+    <tr>
+        <td>Số lượng tồn kho:</td>
+        <td>${productList[index].getProductQuantity()}</td>
+        <td><input type="number" id="quantityProduct" placeholder="Product quantity" value="1"></td>
+    </tr>
+
+    <tr>
+        <td> Chất lượng sản phẩm:</td>
+        <td> ${productList[index].getProductQuality()}</td>
+        <td><input type="text" id="qualityProduct" placeholder="Product quality (5star)" value="Unknow"></td>
+    </tr>
+
+    <tr>
+        <td>Đơn giá sản phẩm:</td>
+        <td>${productList[index].getPrice()}</td>
+        <td><input type="number" id="priceProduct" placeholder="1000$"></td>
+    </tr>
+
+    <tr>
+        <td>Mô tả sản phẩm:</td>
+        <td>${productList[index].getDiscription()}</td>
+        <td><input type="text" id="description" placeholder="Discribe your product"></td>
+    </tr>
+
+
+    <tr>
+        <td>Phân loại sản phẩm:</td>
+        <td> ${productList[index].getProductType()}</td>
+        <td><select id="typeProduct" onchange="chooseType()">
+            <option value="Armor">Armor</option>
+            <option value="Weapon">Weapon</option>
+        </select>
+            <div id="weaponInput"></div>
+            <div id="armorInput"></div>
+            <input type="button" value="Confirm" onclick="addProduct()">
+            <input type="button" value="Cancel" onclick="hideAddProductInput()"></td>
+    </tr>
+</table>
+`
+</body>
+</html>
